@@ -1,0 +1,38 @@
+/* .montserrat{
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+  }
+  .fraunces{
+    font-family: "Fraunces", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    font-variation-settings:
+      "SOFT" 0,
+      "WONK" 0;
+  } */
+body{
+    margin: 0;
+    padding: 0;
+    max-width: 1440px;
+    background-color: hsl(30, 38%, 92%);
+}
+.container{
+    max-width: 600px;
+    height: 450px;
+    margin: 175px auto;
+}
+.photo {
+
+}
+.info {
+
+}
+.new-price {
+
+}
+.old-price {
+
+}
