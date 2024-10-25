@@ -1,38 +1,128 @@
-/* .montserrat{
-    font-family: "Montserrat", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: weight;
-    font-style: normal;
-  }
-  .fraunces{
-    font-family: "Fraunces", serif;
-    font-optical-sizing: auto;
-    font-weight: weight;
-    font-style: normal;
-    font-variation-settings:
-      "SOFT" 0,
-      "WONK" 0;
-  } */
+*{
+    box-sizing: border-box;
+}
+.inline{
+    display: inline-block;
+}
 body{
     margin: 0;
     padding: 0;
     max-width: 1440px;
     background-color: hsl(30, 38%, 92%);
+    font-family: "Montserrat", sans-serif;
+    color: #6C7289;
 }
 .container{
     max-width: 600px;
     height: 450px;
     margin: 175px auto;
+    display: flex;
+    background-color: #fff;
+    border-radius: 10px;
+}
+.title-top{
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    letter-spacing: 5px;
 }
 .photo {
-
+    flex: 0 0 50%;
 }
-.info {
+.img{
+    width: 300px;
+    border-radius: 10px 0 0 10px;
+    height: 450px;
+}
 
+.info {
+    flex: 0 0 50%;
+    padding: 32px;
+}
+h1{
+    font-family: "Fraunces", serif;
+    color: #1C232B;
+    line-height: 32px;
+    margin: 20px 0 24px;
+}
+p{
+    font-size: 14px;
+    line-height: 23px;
+    font-weight: 500;
+    margin-bottom: 26px;
+}
+.price{
+    display: flex;
 }
 .new-price {
-
+    color: #3D8168;
+    font-family: "Fraunces", serif;
+    font-size: 32px;
+    font-weight: bold;
 }
 .old-price {
+    text-decoration: line-through;
+    font-size: 13px;
+    font-weight: 500;
+    margin-left: 19px;
+    line-height: 40px;
+}
+button{
+    width: 236px;
+    height: 48px;
+    background-color: #3D8168;
+    color: #fff;
+    border-radius: 8px;
+    border: 0;
+    margin-top: 26px;
+    padding: 0;
+    font-weight: bold;
+    font-size: 14px;
+}
+button:hover{
+    background-color: #1A4032;
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+i{
+    margin-right: 12px;
+}
 
+@media screen and (max-width: 375px) {
+    .container{
+        width: 343px;
+        flex-direction: column;
+        margin: 28px 16px;
+        padding: 0;
+        min-height: 616px;
+    }
+    .photo{
+        text-align: center;
+        flex: 0 0 0;
+    }
+    .img{
+        width: 343px;
+        height: 240px;
+        object-fit: cover;
+        border-radius: 10px 10px 0 0;
+    }
+    .info{
+        padding: 20px 24px 24px;
+    }
+    h1{
+        margin: 12px 0 16px 0;
+    }
+    p{
+        margin-bottom: 24px;
+    }
+    .new-price{
+        line-height: 32px;
+        font-size: 32px;
+    }
+    .old-price{
+        line-height: 32px;
+    }
+    button{
+        margin-top: 20px;
+        width: 295px;
+    }
 }
